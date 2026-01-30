@@ -19,6 +19,7 @@ Projekt je navržen tak, aby byl rychlý, stabilní a snadno použitelný i pro 
 - Progress bar s real‑time statistikami z FFmpeg
 - Podpora výstupních formátů: **MP4, MKV, AVI**
 - Jednoduché GUI pomocí YAD
+- Vyžaduje FFMPEG a YAD
 
 ---
 
