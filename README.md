@@ -20,6 +20,7 @@ Projekt je navržen tak, aby byl rychlý, stabilní a snadno použitelný i pro 
 - Podpora výstupních formátů: **MP4, MKV, AVI**
 - Jednoduché GUI pomocí YAD
 - Vyžaduje FFMPEG a YAD
+- Je možné stáhnout i soubor .sh pro ostatní distribuce 
 
 ---
 
