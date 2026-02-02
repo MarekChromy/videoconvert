@@ -1,71 +1,36 @@
-🎬 KNI Video Converter PRO
-KNI Video Converter PRO je výkonný grafický nástroj pro Linux, který zjednodušuje hromadnou konverzi video souborů. Kombinuje sílu nástroje ffmpeg s přívětivým rozhraním yad, přičemž klade důraz na rychlost díky hardwarové akceleraci.
+# 🎬 KNI Video Converter PRO
 
-🚀 Klíčové vlastnosti
-⚡ GPU Akcelerace: Podpora VA-API pro bleskové enkódování pomocí grafické karty (Intel, AMD).
+Profesionální video konvertor s podporou GPU akcelerace pro Linux. Moderní webové rozhraní postavené na Python3 + pywebview s podporou FFmpeg.
 
-🤖 Software Enkódování: Kvalitní CPU režim pro maximální kompatibilitu (libx264, libx265).
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/python-3.8+-green.svg)
+![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)
 
-📦 Dávkové zpracování: Vyberte celou složku a nechte skript pracovat za vás.
+## ✨ Vlastnosti
 
-🛠️ Flexibilní nastavení:
+- 🚀 **GPU akcelerace** - Podpora VA-API pro hardware encoding (Intel/AMD)
+- 🎨 **Moderní UI** - Čisté webové rozhraní s real-time progressem
+- ⚡ **Batch konverze** - Zpracování více souborů najednou
+- 📊 **Detailní statistiky** - FPS, rychlost, ETA, frame count
+- 🎯 **Flexibilní nastavení** - Rozlišení, codec, bitrate, framerate
+- 🔧 **Formáty** - MP4, MKV, AVI, MOV, WEBM
+- 🌐 **Česká lokalizace** - Plná podpora češtiny
 
-Výběr kodeků: H.264 nebo H.265 (HEVC).
+## 📋 Podporované distribuce
 
-Změna rozlišení (od 480p až po nativní 4K).
+- ✅ Ubuntu 20.04+ / Debian 11+
+- ✅ Fedora / RHEL / CentOS / Rocky / AlmaLinux
+- ✅ Arch Linux / Manjaro / EndeavourOS
+- ✅ openSUSE / SUSE
 
-Nastavitelný video bitrate (1 Mbps – 20 Mbps).
+## 🎯 Požadavky
 
-📊 Monitoring v reálném čase: Sledování průběhu konverze a logování přímo v GUI.
+### Systémové závislosti
+- Python 3.8+
+- FFmpeg
+- GTK3
+- WebKit2GTK
+- VA-API (pro GPU akceleraci)
 
-📂 Organizace: Automatické vytváření výstupní složky KONVERTOVANO s časovým razítkem.
-
-🛠️ Požadavky
-Pro správný chod aplikace je nutné mít nainstalované tyto balíčky:
-
-ffmpeg (s podporou libx264, libx265 a vaapi)
-
-yad (pro grafické rozhraní)
-
-Instalace závislostí:
-Bash
-# Ubuntu / Debian / Linux Mint
-sudo apt update && sudo apt install ffmpeg yad
-
-# Fedora
-sudo dnf install ffmpeg-free yad
-
-# Arch Linux
-sudo pacman -S ffmpeg yad
-📋 Použití
-Stáhněte skript:
-
-Bash
-git clone https://github.com/vashu-uzivatel/kni-video-converter.git
-cd kni-video-converter
-Nastavte práva ke spuštění:
-
-Bash
-chmod +x konvertor.sh
-Spusťte aplikaci:
-
-Bash
-./konvertor.sh
-🖥️ Náhled rozhraní
-Výběr souborů: Vyberete zdrojovou složku s videi.
-
-Konfigurace: V dialogovém okně zvolíte kodek, kvalitu a režim (CPU vs. GPU).
-
-Konverze: Sledujete terminálový výstup v grafickém okně.
-
-⚙️ Technické detaily
-Aplikace automaticky detekuje cestu k VA-API zařízení (/dev/dri/renderD128). Pokud vaše GPU podporuje hardwarové kódování, konverze bude probíhat s minimálním vytížením procesoru.
-
-Výstupní formát: .mp4
-
-Audio: AAC (automatický bitrate dle zvolené kvality)
-
-Struktura: Skript zachovává původní soubory a vytváří kopie v nové složce.
-
-👨‍💻 Autor
-Marek Chromý (2026)
+### Python knihovny
+- pywebview
